@@ -1,0 +1,14 @@
+// Import your components CSS files here.
+@import "alert";
+@import "avatar";
+@import "navbar";
+@import "banner";
+//@import "index_card";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: lightgray;
+}

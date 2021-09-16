@@ -1,0 +1,15 @@
+// Place all the styles related to the Questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$gray: #F4F4F4;
+
+.box {
+  display: flex;
+}
+.list {
+  width: 1%;
+  background-color: $gray;
+}
+.answer {
+  background-color: rgb(255, 245, 211)
+}

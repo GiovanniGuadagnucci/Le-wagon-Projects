@@ -1,0 +1,16 @@
+# Query: restaurants_path
+# ContextLines: 1
+
+3 results - 3 files
+
+app/views/restaurants/edit.html.erb:
+  5  <%= link_to 'Show', @restaurant %> |
+  6: <%= link_to 'Back', root_path %>
+
+app/views/restaurants/new.html.erb:
+  4  
+  5: <%= link_to 'Back', root_path %>
+
+app/views/restaurants/show.html.erb:
+  23  <%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
+  24: <%= link_to 'Back', root_path %>

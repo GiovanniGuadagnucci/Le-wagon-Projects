@@ -1,0 +1,90 @@
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+  margin: 3% auto;
+  width: 60%;
+  text-align: center;
+}
+
+#wrapper {
+  margin: 10% auto;
+  width: 90%;
+}
+
+.container {
+  background-color: #f1f0ea;
+  border-radius: 5px;
+  box-shadow: 0 10px 50px rgba(238, 238, 238, 0.514);
+  padding: 10%;
+  margin: 5% auto;
+  box-shadow: 2px 5px 3px #00000057;
+}
+
+.container h1 {
+  padding: 0;
+  position: relative;
+}
+
+h1 {
+  font-size: 2em;
+  color: #38302e;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #38302e;
+}
+
+a {
+  text-decoration: none;
+  color: #879793;
+}
+
+a:hover {
+  color: whitesmoke;
+}
+p {
+  color: #2d232e;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+i {
+  font-size: 30px;
+}
+
+#img_circle {
+  size: 12px;
+  border-radius: 50%;
+}
+
+#btn {
+  display: block;
+  background-color: #2d232e;
+  border-radius: 3px;
+  padding: 10px;
+  width: 20%;
+  margin: auto;
+}

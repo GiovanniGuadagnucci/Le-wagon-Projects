@@ -1,0 +1,126 @@
+.banner {
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  height: 100vh;
+  align-items: center;
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  h1 {
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    font-size: 32px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 20px;
+    color: white;
+    opacity: 0.7;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    margin: 0px;
+  }
+  a {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.425);
+    color: white;
+    border-radius: 2px;
+    padding: 10px;
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  padding: 20px;
+  height: 100vh;
+  background-color: rgba(128, 128, 128, 0.308);
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+.card {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(https://images.pexels.com/photos/1319459/pexels-photo-1319459.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  background-size: cover;
+  color: white;
+  height: 300px;
+  display: flex;
+  align-content: flex-end;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  h1 {
+    color: white;
+  }
+  .description {
+    color: rgba(255, 255, 255, 0);
+  }
+  a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0);
+  }
+  &:hover {
+    background-image: linear-gradient(
+        rgba(150, 150, 150, 0.4),
+        rgba(150, 150, 150, 0.4)
+      ),
+      url(https://images.pexels.com/photos/1319459/pexels-photo-1319459.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    color: white;
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.5s;
+    .description {
+      color: white;
+      transition-duration: 0.2s;
+    }
+    a {
+      text-decoration: none;
+      background-color: rgba(255, 255, 255, 0.425);
+      color: white;
+      border-radius: 2px;
+      padding: 10px;
+    }
+  }
+}

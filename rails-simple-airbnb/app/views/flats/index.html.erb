@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>All our Flats (<%= @flats.count %>)</h1>
+
+<tbody>
+  <div id = "wraper">
+  <% @flats.each do |flat| %>
+    <div id = 'cards'>
+        <div class = "flat-card-image" style = "background-image: url('https://picsum.photos/200/300')"></div>
+        <div id ='flat-name'>
+          <p><%= flat.name %></p>
+          <p><%= flat.address %></p>
+          <p>People:<%= "#{flat.price_per_night}"%> $<%= "#{flat.number_of_guests}"%></p>
+        </div>
+        <div id = 'actions'>
+          <%= link_to 'More Info', flat %>
+          <%= link_to 'Edit', edit_flat_path(flat) %>
+          <%= link_to 'Remove', flat, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </div>
+    </div>
+  <% end %>
+  </div>
+</tbody>
+
+<br>
+
+<%= link_to 'New Flat', new_flat_path %>
